@@ -1,0 +1,45 @@
+
+/*CONJUTNO DE REGRAS EM CSS*/
+@media(max-width: 800px){
+    #page-home, #page-search-results{
+        background-position-x: 70vw;/*JOGANDO BACKGROUND PARA ESQUEDA PARA NA ENCAVALAR O CONTEÚDO*/
+    }
+    #page-home .content{
+        align-items: center;/* ALINHAMENTO DO CONTEUDO AO AJUSTAR A TELA*/
+        text-align: center;/*ALINHAMENTO DO CONTEUDO AO AJUSTAR A TELA*/
+    }
+
+    #page-home header a{
+        position: absolute;/*POSIÇÃO ABSOLUTA ELE CRIA UMA SOBREPOSIÇÃO */
+        bottom: 48px; /*DIRECIONADO O ELEMENTO PARA BAIXO*/
+
+        left: 50%; /*JOGANDO O ELEMENTO PARA ESQUERDA*/
+        transform: translateX(-50%);/*DIRECIONADO O ELEMENTO PARA -50% PARA ESQUERDA*/
+    }
+
+    #page-home main{
+        align-items: center; /*DIRECIONADO O ELEMENTO PARA CENTRO*/
+    }
+
+    #page-search-results .cards {
+         grid-template-columns: 1FR;
+    }
+    
+}
+/*CONJUNTOS DE REGRAS PARA A LARGURA NA HOME PARA TELAS GRANDES*/
+@media (min-width: 1700px){
+    #page-home, #page-search-results{
+        background-position-x: 40vw;/*REGRA PARA TRAZER A IMAGEM MAIS PROXIMA*/
+    }
+}
+/*CONJUNTOS DE REGRAS PARA A LARGURA NA HOME PARA TELAS PEQUENAS*/
+@media (max-height: 760px){
+    #page-home,#page-search-results{
+        background-position-y: 200px;/*REGRA PARA DEIXAR A IMAGEM FIXA*/
+    }
+}
+@media (min-height: 1400px){
+    #page-home, #page-search-results{
+        background-position-y: 1100px;/*REGRA PARA DEIXAR A IMAGEM FIXA*/
+    }
+}

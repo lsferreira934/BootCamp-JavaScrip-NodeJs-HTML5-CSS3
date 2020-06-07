@@ -1,0 +1,31 @@
+/*CRIAÇÃO DE VARIAVEL VARIAVEL*/
+:root{
+    --title-color: #322153;
+    --primary-color: #34cb79;
+}
+/*ALTERAÇÃO EM TODO HTML*/
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;/*DEFININDO O TAMNHO DA BOX APARTIR DO TAMANHO DA BORDA*/
+}
+/*IMPORTAÇÃO DA FONTE*/
+html {
+    font-family: Roboto, sans-serif;
+}
+/*COR DO FUNDO DO BACKGROUD E UM EFEITO FUMAÇA*/
+body{
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased;
+}
+/*TIRANDO QUAIS QUER EFEITO NO TEXTO*/
+a{
+    text-decoration: none;
+}
+/*DEFINIDO COR, E FONTE PARA TODOS OS h*/
+h1, h2, h3, h4, h5, h6{
+    font-family: Ubuntu, sans-serif;
+    color: var(--title-color);
+}
+

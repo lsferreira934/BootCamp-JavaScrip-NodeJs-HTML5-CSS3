@@ -1,0 +1,121 @@
+/*CONFIGURAÇÕES DO FUNDO DA PAGÍNA*/
+#page-home{
+    height: 100vh;/* ALTURA DA PAGÍNA */ 
+    background: url('../assets/home-background.svg') no-repeat; /*IMAGEM DO FUNDO DA PAGÍNA*/
+    background-position: 35vw bottom; /* POSIÇÃO DA PAGINA EM RELAÇÃO AO BOTTOM*/
+}
+/*CONFIGURAÇÃO DA CAIXA CONTENT*/
+#page-home .content{
+    width: 90%; /*LARGURA DA CAIXA CONTENT EM RELAÇÃO A MARGEM*/
+    max-width: 1100px;/*LARGURA MAXÍMA DO CONTENT*/
+    margin: 0 auto;/*TAMANHO DA MARGEM 0 PARA O TOP/BOTTOM E AUTO PARA LEFT E RIGHT  */
+    height: 100%;/*TAMANHO DA ALTURA DO CONTENT*/
+    display: flex;/*ALINHAMENTO ENTRE OS ITENS*/
+    flex-direction: column;
+}
+/*CONFIGURAÇÃO DO HEADER ( ITENS NO TOPO - LOGO E CADASTRE UM PONTO)*/
+#page-home header{
+    
+    margin-top: 48px;/*TAMANHO DA MARGEM DO TOP*/
+    display: flex; /*ALINHAMENTO ENTRE OS ITENS*/
+    align-items: center;/*CENTRALIZAR OS ITENS*/
+    justify-content: space-between ; /*ESPAÇAR OS ELEMENTOS DO TOP*/
+}
+
+/*CONFIGURAÇÃO DO HEADER A ( CONFIGURAÇÃO DO CADASTRE UM PONTO DE COLETA)*/
+#page-home header a{
+    display: flex;/*ALINHAMENTOS ENTRE OS ITENS*/
+
+    color: var(--title-color);/*RECEBENDO COR DA VARIAVEL CRIADA EM MAIN*/
+    font-weight: 700;/*DEIXA A FONTE MAIS GROSSA*/
+
+    
+}
+/*CONFIGURAÇÃO DO LOGO ( A FLECHA DO CADASTRE UM PONTO DE COLETA)*/
+#page-home header a span{
+    margin-right: 16px;/*ESPAÇAMENTO ENTRO O LOGO E O TEXTO*/
+    display: flex;/*ALINHAMENTO ENTRO OS ITENS*/
+    background-image: url(../assets/log-in.svg);/*IMPORTAÇÃO DO ICONE*/
+    width: 20px;/*LARGURA DO ICONE*/
+    height: 20px;/*ALTURA DO ICONE*/
+
+}
+/*CONFIGURAÇÃO DO TEXTO SEU MARKETPLACE DE COLETA*/
+#page-home main{
+    max-width: 560px;/*DEFINIÇÃO MAXÍMA DO ELEMENTO EM PIXELS*/
+    flex: 1;/*ESPAÇO DO FLEX*/
+    display: flex;/*ESPAÇAMENTO ENTRE OS ITENS*/
+    flex-direction: column;/*DIREÇÃO DO FLAX EM RELAÇÃO AO ITENS*/
+    justify-content: center;/*JUSTIFICAÇÃO DO CONTENT DEIXANDO ELE NO CENTRO*/
+}
+/*CONFIGURAÇÃO DO MAIN EM RELAÇÃO AO TEXTO H1*/
+#page-home main h1{
+    font-size: 54px;/*TAMANHO DO TEXTO EM PIXEL*/
+   
+}
+/*CONFIGURAÇÃO DO MAIN EM RELAÇÃO AO TEXTO DO P*/
+#page-home main p{
+    font-size: 24px;/*TAMANHO DO TEXTO EM PIXEL*/
+    line-height: 38px;/*ESPAÇAMENTO ENTRE AS LINHAS*/
+    margin-top: 24px;/* EXPAÇAMENTO ENTRE AS LINHAS EM RELAÇÃO AO TOP*/
+
+}
+/*CONFIGURAÇÃO DO BOTÃO */
+#page-home main a{
+    width: 100%;/*LAGURA DO BOTÃO*/
+    max-width: 360px;/*MAXÍMA EXPASSÃO EM PX*/
+    height: 72px;/*ALTURA MAXIMA EM PX*/
+
+    border-radius: 8px; /*MODELAMENTO DA BORDA*/
+
+    display: flex;/*ESPAÇAMENTO ENTRE OS ITENS*/
+    align-items: center;/*ALINHAMENTO DO ITENS*/
+
+    margin-top: 40px;/*MARGEM TOP DO BOTÃO AO OUTRO ELEMENTO*/
+
+    background-color: var(--primary-color);/*IMPORTAÇÃO DA VARIAVEL COONTENDO UMA COR*/
+
+    transition: 400ms;/*TRANSIÇÃO DO EFEITO AO PASSAR O MOUSE NO BOTÃO*/
+
+   
+    }
+
+#page-home main a:hover{
+    background-color: #2fb86e /*COR DO FUNDO DO BOTÃO*/
+    ;
+}
+
+#page-home main a span{
+    width: 72px;/*LAGURA EM PX*/
+    height: 72px;/*ALTURA EM PX*/
+
+    border-top-left-radius: 8px;/*BORDA SOBREPOSTA TOP LADO ESQUERDO SENTIDO HORÁRIO*/
+    border-bottom-left-radius: 8px;/*BORDA SOBREPOSTA BOTTOM LADO ESQUERDO SENTIDO HORÁRIO*/
+
+    
+    background-color: rgba(0, 0,0, 0,08);/*COR DA TRANSIÇÃO DO BOTÃO*/
+
+    display: flex;/*ESPAÇAMENTO ENTRE OS ITENS*/
+    align-items: center;/*ALINHAMENTO DO ITENS*/
+    justify-content: center;/*JUSTIFICAÇÃO DO CONTENT DEIXANDO ELE NO CENTRO*/
+
+
+    flex: 1;/*ESPAÇO DO FLEX COLOCANDO UMA LARGURA*/
+
+}
+
+/*CRIAÇÃO DO PSEU DO ELEMENTO SOBREPOSTO DO BOTÃO PAR COLOCAR A IMAGEM NO BOTÃO*/
+#page-home main a span::after {
+    content: "";/*ESPAÇO VAZIO*/
+    background-image: url(../assets/search.svg);/*IMPORTAÇÃO DO ICONE*/
+
+    width: 20px;/*LAGURA EM PX*/
+    height: 20px;/*ALTURA EM PX*/
+}
+/*CRIAÇÃO DE UMA CAIXA ONDE DARÁ O TRATAMENTO NO TEXTO DENTRO DO BOTÃO*/
+#page-home main a strong{
+    flex: 3;/*ESPAÇO DO FLEX*/
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
