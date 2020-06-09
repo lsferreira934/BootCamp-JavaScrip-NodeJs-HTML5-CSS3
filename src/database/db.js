@@ -8,41 +8,8 @@ const db = new sqlite3.Database("./src/database/database.db") //NEW INICIA UM NO
 module.exports = db
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//ULTILIZANDO O OBJETO PARA O BANCO DE DADOS
-/*db.serialize(() => {
+/*//ULTILIZANDO O OBJETO PARA O BANCO DE DADOS
+db.serialize(() => {
     //CRIANDO AS TABELAS
     db.run(`
         CREATE TABLE IF NOT EXISTS places (
@@ -102,7 +69,7 @@ module.exports = db
     })
 
     //DELETAR UM DADO DA TABELA
-    db.run(`DELETE FROM places WHERE id = ?`, [3], function (err) {
+    /*db.run(`DELETE FROM places WHERE id = ?`, [13], function (err) {
         if (err) {
             return console.log(err)
         }
