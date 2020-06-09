@@ -1,12 +1,26 @@
 {
   "name": "NLW",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "Leandro da Silva Ferreira",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsferreira934/NLW.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lsferreira934/NLW/issues"
+  },
+  "homepage": "https://github.com/lsferreira934/NLW#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.1",
+    "sqlite3": "^4.2.0"
+  }
 }

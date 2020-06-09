@@ -24,6 +24,20 @@
     #page-search-results .cards {
          grid-template-columns: 1FR;
     }
+
+    page-create-point .cards img{
+        height: 250px;
+    }
+    #page-create-point .field-group{
+        flex-direction: column;
+        
+    }
+
+    page-create-point .field-group .field + field{
+        margin-left: 0;
+        
+        
+
     
 }
 /*CONJUNTOS DE REGRAS PARA A LARGURA NA HOME PARA TELAS GRANDES*/
@@ -32,6 +46,7 @@
         background-position-x: 40vw;/*REGRA PARA TRAZER A IMAGEM MAIS PROXIMA*/
     }
 }
+
 /*CONJUNTOS DE REGRAS PARA A LARGURA NA HOME PARA TELAS PEQUENAS*/
 @media (max-height: 760px){
     #page-home,#page-search-results{
